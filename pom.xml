@@ -10,6 +10,11 @@
     <packaging>pom</packaging>
     <name>基础依赖版本管理</name>
 
+    <modules>
+        <module>auth</module>
+        <module>talk</module>
+    </modules>
+
     <properties>
         <springframework.version>5.1.8.RELEASE</springframework.version>
         <springboot.version>2.1.6.RELEASE</springboot.version>
@@ -42,6 +47,7 @@
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
